@@ -51,7 +51,7 @@ function App() {
       <div>
         <button onClick={handleGetUsers}>Get users</button>
       </div>
-      {users?.map(user => <div>Name: {user.username}</div>)}
+      {users?.map(user => <div key={user.id}>Name: {user.username}</div>)}
     </>
   );
 }
